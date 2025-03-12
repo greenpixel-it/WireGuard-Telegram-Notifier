@@ -1,8 +1,7 @@
 # WireGuard-Telegram-Notifier
 Bash script that sands telegram notification every time one user connects to wireguard vpn
 
-First of all format your wireguard configuration file in the followinf way:
-
+First of all format your wireguard configuration file in this way:
 ```
 
 [Peer]
@@ -11,11 +10,12 @@ AllowedIPs = 172.16.1.2/32
 # username
 
 ```
-the "username" will be sent in the telegram message
+Add a comment after each peer with the associated user or application.
+The "username" will be sent in the telegram message.
 
-Just copy the scripts in "/usr/local/bin/"
+Just copy the scripts in `/usr/local/bin/` and assign executable permissions
 
-add on crontab following entry:
+Add on crontab following entry:
 ```
 * * * * * /usr/local/bin/keep_running_wg0-notify.sh
 ```
