@@ -3,7 +3,8 @@ Bash script that sands telegram notification every time one user connects to wir
 
 
 add on crontab following entry:
-'''
+```
 * * * * * /usr/local/bin/keep_running_wg0-notify.sh
-'''
+```
+
 
