@@ -13,11 +13,14 @@ AllowedIPs = 172.16.1.2/32
 Add a comment after each peer with the associated user or application.
 The "username" will be sent in the telegram message.
 
-Just copy the scripts in `/usr/local/bin/` and assign executable permissions
+Copy the script in `/usr/local/bin/` and assign executable permissions
+copy the service in `/etc/systemd/system/` and assign executable permissions
 
-Add on crontab following entry:
+Then:
 ```
-* * * * * /usr/local/bin/keep_running_wg0-notify.sh
+sudo systemctl daemon-reload
+sudo systemctl enable wg0-notify.service
+sudo systemctl start wg0-notify.service
 ```
 all the settings are present in the header of the `wg0-notify.sh` script
 
