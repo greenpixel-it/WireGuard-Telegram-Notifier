@@ -14,7 +14,8 @@ Add a comment after each peer with the associated user or application.
 The "username" will be sent in the telegram message.
 
 Copy the script in `/usr/local/bin/` and assign executable permissions.
-copy the service in `/etc/systemd/system/` and assign executable permissions.
+
+Copy the service in `/etc/systemd/system/` and assign executable permissions.
 
 Then:
 ```
