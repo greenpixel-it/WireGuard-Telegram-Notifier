@@ -1,0 +1,14 @@
+[Unit]
+Description=wiregard Notification  Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/tmp/
+ExecStart=/usr/local/bin/wg0-notify.sh
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
